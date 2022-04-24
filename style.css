@@ -37,6 +37,7 @@ body {
   background: var(--body-color);
   -webkit-font-smoothing: antialiased; /* deixar as fontes menos bold */
 }
+
 h1 {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
@@ -45,22 +46,31 @@ h1 {
 
 /*======= LAYOUT =======*/
 #header {
-  height: 4,5rem; /* resposivo com base no 'root element' */
+  border-bottom: 1px solid #e4e4e4;
 }
 
 nav {
+  height: 4,5rem; /* resposivo com base no 'root element' */
   display: flex;
+  align-items: center;
   justify-content: space-between; /* elementos nas estremidades*/
 }
 
 .logo {
-
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
 }
 
+.logo span {
+  color: var(--base-color);
+}
 .container {
   width: 100%;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
+.section {
+  padding: 5rem o;
+}
 /*======= HOME =======*/
