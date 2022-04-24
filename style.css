@@ -15,16 +15,32 @@ img {
   height: auto;
 }
 
+/*======= VERIÁVEIS =======*/
+:root{
+  /* font-size: 100%; /* 16px tamanho padrão da fonte */
+
+  /*  */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --body-color: hsl(0 0% 98%);
+}
+
 /*======= BASE =======*/
 body {
   font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased; /* deixar as fontes menos bold */
 }
- h1 {
-   font: 700 1.875rem 'Poppins', sans-serif;
- }
-/*======= ? =======*/
-:root{
-  font-size: 100%; /* 16px */
+h1 {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto; 
 }
 
 /*======= LAYOUT =======*/
