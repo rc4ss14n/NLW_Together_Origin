@@ -4,3 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  font-size: 100%; /* 16px */
+}
+
+#header {
+  height: 4,5rem; /* resposivo com base no 'root element' */
+}
