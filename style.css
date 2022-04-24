@@ -16,8 +16,12 @@ img {
 }
 
 /*======= BASE =======*/
-
-
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+}
+ h1 {
+   font: 700 1.875rem 'Poppins', sans-serif;
+ }
 /*======= ? =======*/
 :root{
   font-size: 100%; /* 16px */
