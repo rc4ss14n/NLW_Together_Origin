@@ -70,7 +70,16 @@ nav {
   margin-right: 1.5rem;
 }
 
-.section {
-  padding: 5rem o;
+.grid {
+  display: grid;
+  gap: 2rem; /* adicionando espaço entre os itens. */
 }
+
+.section {
+  padding: 5rem 0;
+}
+
 /*======= HOME =======*/
+#home .container {
+  margin: 0;
+}
