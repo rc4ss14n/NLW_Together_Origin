@@ -5,10 +5,31 @@
   box-sizing: border-box;
 }
 
+img {
+  /*  adaptar ao tamanho mesmo que a imagem seja maior*/
+  width: 100%;
+  height: auto;
+}
+
 :root{
   font-size: 100%; /* 16px */
 }
 
 #header {
   height: 4,5rem; /* resposivo com base no 'root element' */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* elementos nas estremidades*/
+}
+
+.logo {
+
+}
+
+.container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
