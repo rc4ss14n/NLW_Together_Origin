@@ -50,7 +50,7 @@ h1 {
 }
 
 nav {
-  height: 4,5rem; /* resposivo com base no 'root element' */
+  height: 4.5rem; /* resposivo com base no 'root element' */
   display: flex;
   align-items: center;
   justify-content: space-between; /* elementos nas estremidades*/
