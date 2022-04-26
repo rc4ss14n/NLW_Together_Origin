@@ -73,35 +73,6 @@ h1, h2 {
 }
 
 /*======= LAYOUT =======*/
-
-#header {
-  border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 2rem;
-  display: flex;
-  position: fixed; /*  PARA NO TOPO*/
-  top: 0;
-  left: 0;
-  z-index: 100; /* SOBREPOR OS OUTROS POR CAUSA DO FIXED */
-  width: 100%;
-  background: var(--body-color);
-}
-
-nav {
-  height: 4.5rem; /* resposivo com base no 'root element' */
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* elementos nas estremidades*/
-}
-
-.logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-}
-
-.logo span {
-  color: var(--base-color);
-}
-
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -115,8 +86,44 @@ nav {
 .section {
   padding: 5rem 0;
 }
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+  position: fixed; /*  PARA NO TOPO*/
+  top: 0;
+  left: 0;
+  z-index: 100; /* SOBREPOR OS OUTROS POR CAUSA DO FIXED */
+  width: 100%;
+  background: var(--body-color);
+}
+
+nav {
+  height: var(--header-height); /* resposivo com base no 'root element' */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between; /* elementos nas estremidades*/
+}
+
+.logo {
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.logo span {
+  color: var(--base-color);
+}
+
+main {
+  margin-top: var(--header-height);
+}
 
 /*======= HOME =======*/
+#home {
+  overflow: hidden;
+}
+
 #home .container {
   margin: 0;
 }
@@ -143,14 +150,16 @@ nav {
 
 #home .image img, 
 #home .image::before {
-  border-radius: 0.25rem;
+  border-radius: .25rem;
 }
+
 #home .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   text-align: center;
 }
 
+#home .text h1,
 #home .text h2 {
   margin-bottom: 1rem;
 }
