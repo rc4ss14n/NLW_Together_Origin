@@ -41,7 +41,7 @@ body {
   -webkit-font-smoothing: antialiased; /* deixar as fontes menos bold */
 }
 
-h1 {
+h1, h2 {
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto; 
@@ -62,18 +62,28 @@ h1 {
 .button:hover { /* QUNADO ESTIVER COM O MOUSE SOBRE O BOTÃO */
   background: var(--base-color-alt);
 }
+
 .divider-1 {
   height: 1px;  
   background: linear-gradient(
     270deg,
-    hsla(var(--hue),36%,57%,1)0%,
-    hsla(var(--hue),65%,88%,0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
   );
 }
 
 /*======= LAYOUT =======*/
+
 #header {
   border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem;
+  display: flex;
+  position: fixed; /*  PARA NO TOPO*/
+  top: 0;
+  left: 0;
+  z-index: 100; /* SOBREPOR OS OUTROS POR CAUSA DO FIXED */
+  width: 100%;
+  background: var(--body-color);
 }
 
 nav {
@@ -91,6 +101,7 @@ nav {
 .logo span {
   color: var(--base-color);
 }
+
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
